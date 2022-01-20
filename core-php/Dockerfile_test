@@ -1,0 +1,4 @@
+FROM php:7.4-cli
+COPY . /usr/src/html/
+WORKDIR /usr/src/html/
+CMD [ "php", "./index.php" ]
