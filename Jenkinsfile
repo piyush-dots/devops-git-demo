@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat "docker build -t piyushmathur2000/myfirstPipeline D:\\Jenkins-slave\\slave-1\\workspace\\MyFirstPipeline"
+                bat "docker build -t piyushmathur2000/myfirstpipeline D:\\Jenkins-slave\\slave-1\\workspace\\MyFirstPipeline"
             }
         }
         stage('Test') {
@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                bat "docker run -it -d -p 98:80 --name mytestpipeline piyushmathur2000/myfirstPipeline"
+                bat "docker run -it -d -p 98:80 --name mytestpipeline piyushmathur2000/myfirstpipeline"
             }
         }
     }
